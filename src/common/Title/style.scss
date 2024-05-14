@@ -1,0 +1,36 @@
+.titleBlock {
+  position: relative;
+  margin-top: 300px;
+  margin-bottom: 30px;
+  margin: auto;
+  @media screen and (max-width: 500px) {
+    width: 100% !important;
+  }
+  
+  h4 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 40px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'EB Garamond', serif;
+    @media screen and (max-width: 720px) {
+      font-size: 30px;
+      line-height: 30px;
+      @media screen and (max-width: 560px) {
+        font-size: 25px;
+        line-height: 25px;
+        @media screen and (max-width: 500px) {
+          width: 100% !important;
+          @media screen and (max-width: 380px) {
+            font-size: 22px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}

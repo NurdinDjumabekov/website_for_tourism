@@ -1,0 +1,57 @@
+.addLocation {
+    width: 350px;
+    padding: 0 0 10px 0;
+    @media screen and (max-width: 400px) {
+        width: 310px;
+      }
+    > form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 5px 0px;
+
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 19px;
+            font-family: 'EB Garamond', serif;
+            margin-bottom: 5px;
+        }
+
+        .titleInput {
+            width: 100%;
+            padding: 0 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            margin: 0 auto 10px 0;
+            height: 38px;
+            font-size: 15px;
+        }
+
+        .file {
+            width: 150px;
+            display: none;
+        }
+
+        p {
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 19px;
+            font-family: 'EB Garamond', serif;
+            text-decoration: underline;
+            margin: 8px 0;
+        }
+
+        button {
+            width: 220px;
+            display: block;
+            margin: 15px auto 10px;  
+            height: 35px;
+            border-radius: 5px;
+            background: #053466;
+            color: #fff;
+        }
+    }
+}

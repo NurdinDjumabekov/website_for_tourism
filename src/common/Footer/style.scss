@@ -1,0 +1,92 @@
+.footer {
+  scroll-behavior: smooth;
+  &__inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    @media screen and (max-width: 1250px) {
+      gap: 40px;
+      @media screen and (max-width: 800px) {
+        flex-wrap: wrap;
+      }
+    }
+
+    .logo {
+      width: 150px;
+      height: 40px;
+    }
+    .moreInfo {
+      font-size: 13px;
+      margin: 20px 0;
+    }
+
+    &__block {
+      width: 33%;
+      @media screen and (max-width: 680px) {
+        width: 45%;
+        @media screen and (max-width: 520px) {
+          width: 90%;
+        }
+      }
+      a {
+        display: flex;
+        align-items: center !important;
+        gap: 10px;
+        cursor: pointer;
+        margin-top: 30px;
+
+        img {
+          width: 18px;
+          height: 18px;
+        }
+      }
+
+      h6 {
+        margin-bottom: 35px;
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      .href {
+        font-size: 15px;
+        color: #222;
+        margin-top: 25px;
+        cursor: pointer;
+        &:hover {
+          color: red;
+        }
+        > p {
+          font-size: 15px;
+          color: #222;
+          &:hover {
+            color: red;
+          }
+        }
+      }
+
+      .callText {
+        margin: 0px !important;
+      }
+    }
+
+
+    .noneMob {
+      @media screen and (max-width: 580px) {
+        display: none;
+      }
+    }
+  }
+  .line {
+    border-bottom: 1px solid #222;
+  }
+  span {
+    display: block;
+    font-size: 15px;
+    color: #222;
+    padding: 20px 20px 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+}

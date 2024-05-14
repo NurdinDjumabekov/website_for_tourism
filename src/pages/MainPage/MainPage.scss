@@ -1,0 +1,35 @@
+.mainPage {
+  height: 100vh;
+  background-image: url('../../assets/images/main.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .logoMain {
+      width: 800px;
+      margin: 0 auto;
+      @media screen and (max-width: 800px) {
+        width: 500px;
+      }
+      @media screen and (max-width: 500px) {
+        width: 350px;
+      }
+    }
+    p {
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: center;
+      padding-top: 30px;
+      max-width: 90%;
+      margin: auto;
+      @media screen and (max-width: 500px) {
+        font-size: 18px;
+      }
+    }
+  }
+}

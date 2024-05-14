@@ -1,0 +1,96 @@
+.searchPage {
+  padding-top: 100px;
+  min-height: 70vh;
+  @media screen and (max-width: 500px) {
+    min-height: 50vh;
+  }
+  .inputBlock {
+    position: relative;
+    input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #222;
+      padding: 20px 20px 20px 70px;
+      font-size: 20px;
+      @media screen and (max-width: 500px) {
+        font-size: 16px;
+        padding: 10px 20px 10px 70px;
+      }
+    }
+
+    > img {
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      @media screen and (max-width: 500px) {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  .listTrips {
+    padding: 30px 0px 80px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .everySlide {
+      height: 370px;
+      width: 285px;
+      margin: auto;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+      margin: 0px 20px;
+      padding: 12px;
+      background-color: rgba(255, 255, 255, 0.25);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      img {
+        border-radius: 8px;
+        width: 100%;
+        height: 200px;
+      }
+
+      .texts {
+        padding: 0 0 10px 0;
+
+        h5 {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 25px;
+          font-family: 'EB Garamond', serif;
+          margin-bottom: 10px;
+          max-height: 50px;
+          overflow: hidden;
+          color: #222;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 18px;
+          font-family: 'EB Garamond', serif;
+          padding-left: 2px;
+          color: #222;
+
+        }
+      }
+      
+      button {
+        display: block;
+        color: #222;
+        background: transparent;
+      }
+    }
+  }
+}
