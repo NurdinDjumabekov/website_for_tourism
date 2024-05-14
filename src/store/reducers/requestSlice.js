@@ -132,7 +132,9 @@ export const addLocation = createAsyncThunk(
         data,
       });
       if (response.status >= 200 && response.status < 300) {
-        getData();
+        setTimeout(() => {
+          getData();
+        }, 1000);
         return response?.data?.recordset;
       } else {
         throw Error(`Error: ${response.status}`);

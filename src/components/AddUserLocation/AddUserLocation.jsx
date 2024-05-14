@@ -11,7 +11,7 @@ const AddUserLocation = ({ modal, setModal, getData }) => {
   const [date, setDate] = useState({
     email: "",
     title: "",
-    file: null, // Здесь будет сохраняться выбранный файл
+    img: null, // Здесь будет сохраняться выбранный файл
   });
 
   const handleUploadClick = () => {
@@ -29,7 +29,7 @@ const AddUserLocation = ({ modal, setModal, getData }) => {
 
     formData.append("email", date.email);
     formData.append("title", date.title);
-    formData.append("file", date.file);
+    formData.append("img", date.img);
 
     dispatch(addLocation({ data: formData, getData }));
 
@@ -65,7 +65,7 @@ const AddUserLocation = ({ modal, setModal, getData }) => {
             ref={inputRef}
             style={{ display: "none" }}
             onChange={(e) => {
-              setDate({ ...date, file: e.target.files[0] });
+              setDate({ ...date, img: e.target.files[0] });
             }}
             required
             name="file"
